@@ -42,6 +42,10 @@ p {
   line-height: 1.6;
 }
 
+main {
+  padding: 10px;
+}
+
 .start-game {
   position: fixed;
   left: 0;
@@ -143,6 +147,36 @@ p {
   backface-visibility: hidden;
   border: 2px solid #2196f3;
   border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .start-game span {
+    font-size: 16px;
+  }
+
+  .info,
+  .memory-game-blocks {
+    width: 100%;
+  }
+
+  .info {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .memory-game-blocks .game-block {
+    width: 70px;
+    height: 70px;
+  }
+
+  .memory-game-blocks .game-block .front::before {
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  .memory-game-blocks .game-block .end img {
+    width: 50px;
+  }
 }
 
 @keyframes pulse {
